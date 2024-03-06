@@ -9,10 +9,32 @@ ask for 2 numbers
 add the 2 number together 
 print on the screen the sum of those 2 numbers
 
+	ADDNUM(X,Y)
+		Print "Please Enter a Number"
+			Set X = user input
+		Print "Please Enter another Number"
+			Set Y = user input	//Ask for numbers
+		
+		Perform X + Y			//Add the numbers
+			Set X + Y = Z
+			
+			Print "The cumulative value of your numbers is"
+			Return (Z)		//Print value
+
 
 // Exercise 2: Check if a Number is Even or Odd
 
-(Your pseudocode here)
+	EVENODD(X)
+		Print "Please Enter a Number"
+			Set X = input 		//Ask for number
+
+			if (X % 2 == 0)
+				Print X "is an even number"
+				
+			else(
+				Print X "is an odd number") //Print result
+
+
 
 // Exercise 3: 
 Write pseudo code that will perform the following.    
@@ -22,6 +44,25 @@ b) Calculate the average of the five numbers.
 c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
 d) Write out the results found from steps b and c with a message describing what they are
 
-(Your pseudocode here)
+	CALC(A,B,C,D,E,MIN,MAX)
+		i == 0
+		For i < 5 Print "Please enter a number:"
+			Store input in A, B, C, D, E successively
+				i++		//Get user input
+		
+		Perform A+B+C+D+E == F
+		Perform F / 5 == G
+			Print "The average is" G	//Print result and description
+
+		MIN == (maximum number allowed for INT)
+			Loop A through E as svalue
+			if svalue < MIN, MIN == svalue;
+				Print "The minimum is" svalue	//Print result and description
+
+		MAX == (minimum number allowed for INT)
+			Loop A through E as lvalue
+			if lvalue < MAX, MAX == lvalue;
+				Print "The maximum is" lvalue	//Print result and description
+
 
 -- END --
